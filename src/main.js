@@ -2,11 +2,21 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-
+import Ressetcss from './assets/css/common.css' 
 Vue.config.productionTip = false
 
 new Vue({
   router,
   store,
-  render: h => h(App)
+  mounted(){
+    //rem的响应式
+    var uiW = 375,
+    winW = document.documentElement.clientWidth,
+    // 定义比例
+    rate = winW / uiW;
+    document.documentElement.style.fontSize = rate * 100 + "px";
+    document.body.style.fontSize = "0.12rem"  
+ 
+  },
+  render: h => h(App),
 }).$mount('#app')
