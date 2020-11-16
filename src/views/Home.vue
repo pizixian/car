@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-    
+   提交
     </div>
 </template>
 
