@@ -12,8 +12,7 @@ Vue.use(Vant);
 new Vue({
   router,
   store,
-  mounted(){
-   
+  mounted(){ 
       //rem的响应式
     var uiW = 375,
     winW = document.documentElement.clientWidth,
