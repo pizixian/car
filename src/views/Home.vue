@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Head from '../head/head'
+import Head from '../components/head/head'
 export default {
     components: {
 
