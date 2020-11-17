@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-   adsaa
+  
     <router-view/>
   </div>
 </template>
