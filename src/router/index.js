@@ -20,11 +20,16 @@ const routes = [
     component:() => import('../components/choose_time/choose_time.vue')
   },
   {
-<<<<<<< HEAD
+
     path: '/wallet',
     name: 'wallet',
+
     component:() => import('../components/mine/mine_wallet/mine_wallet.vue'),
-=======
+
+    component:() => import('../components/mine/mine_wallet/mine_wallet.vue')
+  },
+  {
+
     path: '/Home',
     name: 'Home',
     component:() => import('../views/Home.vue')
@@ -41,7 +46,7 @@ const routes = [
   {
     path: '/Discuss', 
     component:() => import('../components/order/discuss.vue')
->>>>>>> e3dbe3280ec0ea0a2f32168cc20f4dd669c1b2fd
+
   }
 ]
 
