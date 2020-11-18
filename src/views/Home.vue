@@ -1,14 +1,11 @@
 <template>
-    <div class="home">
-   提交
+    <div>
+
     </div>
 </template>
 
 <script>
 export default {
-    components: {
-
-    },
     props: {
 
     },
@@ -17,25 +14,15 @@ export default {
 
         };
     },
-    created() {
-
-    },
-    watch: {
-
-    },
-    computed: {
-
-    },
-    mounted() {
-
-    },
     methods: {
+
+    },
+    components: {
 
     },
 };
 </script>
 
-<style lang='less' scoped>
+<style scoped lang="less">
 
 </style>
-
