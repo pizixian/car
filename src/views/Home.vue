@@ -21,7 +21,6 @@
             <router-link to="/Home/Foreign">境外租车</router-link> 
         </div> 
         <router-view></router-view>
-        <transition name="slide-fade">
          <div class="inland">
         <ul class="add">
             <li>
@@ -55,7 +54,6 @@
         <van-checkbox v-model="isSendcar" icon-size="16px">送车上门</van-checkbox>
         
     </div>
-        </transition>
         <router-view></router-view>   
        <van-button type="info">我要租车</van-button>
     </div>
@@ -91,7 +89,7 @@ export default {
         };
     }, 
     mounted(){
-        // this.$router.push('/home/Inland')
+        // this.$router.push()
     },
     methods: {
         showInfo() {
@@ -269,20 +267,6 @@ li:nth-child(2){
         }
     } 
 }
- .slide-fade-enter-active {
-    transition: all 0.5s ease;
-  }
-
-  .slide-fade-leave-active {
-    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
-  }
-
-  .slide-fade-enter,
-        .slide-fade-leave-to
-        /* .slide-fade-leave-active for below version 2.1.8 */ {
-    transform: translateX(-7.5rem);
-    opacity: 0;
-  }
 } 
 </style>
  
