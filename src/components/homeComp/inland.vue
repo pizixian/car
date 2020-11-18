@@ -29,8 +29,12 @@
                 <span>11月23日 19:30</span>
             </p>
         </div>
+        <div class="sendcar">
         <van-checkbox v-model="isSendcar" icon-size="16px">送车上门</van-checkbox>
-        <van-button type="info">我要租车</van-button>
+        </div> 
+        <van-button type="info">我要租车</van-button> 
+        
+        
     </div>
 </template>
 
@@ -88,7 +92,7 @@ export default {
             flex: 1; 
         }
         li:nth-child(3){
-            width: .96rem;
+            width: 1.2rem;
             .van-switch{
                 margin-top: .16rem;
             }
@@ -118,24 +122,27 @@ export default {
         }
         
     }
-    .van-checkbox{
-        color: #999999;
-        font-size: .24rem; 
+    .sendcar{
         width: 100%;
-        padding: .3rem 4.6rem .3rem .32rem;
-        box-sizing: border-box;
+        padding: .3rem 0 .3rem .32rem;
         border-bottom: #EEEEEE solid 1px;
-    }
+        .van-checkbox{
+            color: #999999;
+            font-size: .24rem; 
+            width: 1.8rem;
+            box-sizing: border-box;
+        }
+    } 
     .van-button{
-        width: 5.82rem;
-        margin: 0 auto;
+        width: 5.82rem; 
         height: .92rem;
         color: white;
-        font-size: .32rem;
+        font-size: .32rem; 
         font-weight: bold;
         border-radius: .1rem;
-        margin: .54rem .34rem 0;
-    }
+        margin: .54rem .96rem 0; 
+    } 
+    
 }
 </style>
 
