@@ -1,5 +1,5 @@
 <template>
-    <div class="foreign">
+    <div>
 
     </div>
 </template>
@@ -24,7 +24,5 @@ export default {
 </script>
 
 <style scoped lang="less">
-.foreign{
-     
-}
+
 </style>
