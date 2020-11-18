@@ -14,8 +14,13 @@ Vue.use(Vant);
 new Vue({
   router,
   store,
+<<<<<<< HEAD
   mounted(){ 
       //rem的响应式
+=======
+  mounted(){
+    //rem的响应式
+>>>>>>> 13e6ebab971c55af7817a21f7729f58e4d2274ca
     var uiW = 750,
     winW = document.documentElement.clientWidth,
     // 定义比例
