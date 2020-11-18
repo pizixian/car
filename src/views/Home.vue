@@ -1,13 +1,15 @@
 <template>
-    <div class="home">
-        <Head> 
-            <van-cell is-link @click="showPopup">
-                <img src="../assets/images/首页小人儿.png" slot="img_left" class="img_left">
-            </van-cell>
-            <van-popup v-model="showinfo">
-                <UserInfo></UserInfo>
-            </van-popup>
-            
+    <div class="home">   
+        
+        <div class="info" v-show="isShow">
+            <UserInfo ></UserInfo> 
+            <div class="bj" @click="hide"></div>
+        </div>
+        
+        <Head>  
+            <div slot="img_left" class="himg_left" @click="showInfo"> 
+                <img src="../assets/images/首页小人儿.png">
+            </div> 
             <span slot="car_title" class="heade_tit">平价租车</span> 
             <van-icon name="ellipsis" slot="img_right" class="img_right"/>
         </Head> 
@@ -18,16 +20,8 @@
             <router-link to="/Home/Inland">国内租车</router-link> 
             <router-link to="/Home/Foreign">境外租车</router-link> 
         </div> 
-        <router-view></router-view>  
-        <div class="map"></div>
-        <div class="address">
-            <span>国内租车</span>
-            <span>境外租车</span>
-        </div>
-
-    <div>
-
-
+        <router-view></router-view>   
+       
     </div>
 </template>
 
@@ -44,12 +38,15 @@ export default {
     },
     data() {
         return {
-            showinfo:false
+            isShow:false
         };
     }, 
     methods: {
-        showPopup() {
-            this.showinfo = true;
+        showInfo() {
+            this.isShow = true;
+        },
+        hide(){
+            this.isShow=false;
         }
      
     }
@@ -58,11 +55,24 @@ export default {
 
 
 <style lang='less' scoped>
-.home{
-    .map{
-        height: 6.06rem;
-        background-color: crimson;
-    } 
+.home{  
+    height: 100%;
+    position: relative;
+    .info{
+        z-index: 100;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        div:nth-child(2){
+            flex:1;
+            height: 100%;
+            background-color: #aaa;
+            opacity: .6; 
+        }
+    }
     .choice_add{
         display: flex; 
         background-color: #F5F5F5; 
@@ -97,3 +107,5 @@ export default {
 
     
 } 
+</style>
+ 

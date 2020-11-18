@@ -18,17 +18,11 @@ const routes = [
     name: 'choosetime',
     component:() => import('../components/choose_time/choose_time.vue')
   },
-  {
-
-    path: '/wallet',
-    name: 'wallet',
-
-    component:() => import('../components/mine/mine_wallet/mine_wallet.vue'),
-
-    component:() => import('../components/mine/mine_wallet/mine_wallet.vue')
+  { 
+    path: '/wallet',  
+    component:() => import('../components/mine/mine_wallet/mine_wallet.vue') 
   },
-   
-  
+    
   {
     path: '/Home',
     name: 'Home',

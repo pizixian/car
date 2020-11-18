@@ -63,7 +63,21 @@ export default {
         height: .33rem;
         position: absolute;
         top: .67rem;
-        left: 0rem;
+        left: 0rem; 
+    }
+    .himg_left{
+        width: .3rem;
+        height: .34rem;
+        position: absolute; 
+        left: .28rem;
+        top: .67rem; 
+        img{
+            width: 100%;
+            height: 100%;
+        }  
+        
     }
 }
+
 </style>
+ 
