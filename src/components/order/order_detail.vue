@@ -1,6 +1,9 @@
 <template>
     <div class="order_det">
-        <Head></Head>
+        <Head>
+            <van-icon name="arrow-left"  slot="img_left" class="img_left"/>
+            <span slot="car_title" class="heade_tit">订单详情</span>
+        </Head>
         <div class="cont">
             <div class="title">
                 <span>订单号：000000000</span>
@@ -63,7 +66,9 @@ export default {
           this.$router.push('/Discuss')
       }
   },
-  components: {},
+  components: {
+      Head
+  },
 };
 </script>
 

@@ -6,12 +6,25 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/Home',
+    path: '/',
     name: 'Home',
     component:() => import('../views/Home.vue')
+    
   },
   {
-    path: '/',
+    path: '/Home',
+    name: 'Home',
+    component:() => import('../views/Home.vue'),
+    children:[{
+      path:'Inland',
+      component:() => import('../components/homeComp/inland.vue')
+    },{
+      path:'Foreign',
+      component:() => import('../components/homeComp/foreign.vue')
+    }]
+  },
+  {
+    path: '/Order',
     name: 'Order',
     component:() => import('../components/order/my_order.vue')
   },

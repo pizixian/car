@@ -1,6 +1,9 @@
 <template>
     <div class="discuss">
-        <Head></Head>
+        <Head>
+            <van-icon name="arrow-left"  slot="img_left" class="img_left"/>
+            <span slot="car_title" class="heade_tit">评价</span>
+        </Head>
         <div class="cont">
             <ul>
                 <li>
@@ -58,7 +61,7 @@ export default {
 
     },
     components: {
-
+        Head
     },
 };
 </script>

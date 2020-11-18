@@ -1,6 +1,9 @@
 <template>
     <div class="order">
-        <Head></Head>
+        <Head>
+            <van-icon name="arrow-left"  slot="img_left" class="img_left"/>
+            <span slot="car_title" class="heade_tit">我的订单</span>
+        </Head>
         <ul class="order_list">
             <li>
                 <img src="" alt="">
@@ -34,7 +37,7 @@ export default {
         }
     },
     components: {
-
+        Head
     },
 };
 </script>

@@ -4,6 +4,12 @@ import router from './router'
 import store from './store'
 import Ressetcss from './assets/css/common.css' 
 Vue.config.productionTip = false
+//引入地图
+import BaiduMap from 'vue-baidu-map';
+Vue.use(BaiduMap, {
+  ak: 'd44oHULzxHzBFFRqjGnIyhLb2AVe6ATO'
+})
+
 
 //引入框架
 import Vant from 'vant';
