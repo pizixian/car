@@ -11,15 +11,16 @@ Vue.use(BaiduMap, {
 })
 
 
+import 'vant/lib/index.css';
+
 //引入框架
 import Vant from 'vant';
 import 'vant/lib/index.css';
 Vue.use(Vant);
 new Vue({
   router,
-  store,
+  store, 
   mounted(){ 
-      //rem的响应式
     var uiW = 750,
     winW = document.documentElement.clientWidth,
     // 定义比例

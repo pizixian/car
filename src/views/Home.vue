@@ -19,17 +19,26 @@
             <router-link to="/Home/Foreign">境外租车</router-link> 
         </div> 
         <router-view></router-view>  
+        <div class="map"></div>
+        <div class="address">
+            <span>国内租车</span>
+            <span>境外租车</span>
+        </div>
+
+    <div>
+
+
     </div>
 </template>
 
-<script>
+<script> 
 import Head from '../components/head/head'
 import Map from '../components/homeComp/map'
-import UserInfo from '../components/homeComp/userinfo'
+import UserInfo from '../components/homeComp/userinfo' 
 export default {
     components: {
         Head,Map,UserInfo
-    },
+    },  
     props: {
 
     },
@@ -37,26 +46,16 @@ export default {
         return {
             showinfo:false
         };
-    },
-    created() {
-
-    },
-    watch: {
-
-    },
-    computed: {
-
-    },
-    mounted() {
-
-    },
+    }, 
     methods: {
         showPopup() {
             this.showinfo = true;
         }
-    },
-};
+     
+    }
+}
 </script>
+
 
 <style lang='less' scoped>
 .home{
@@ -95,7 +94,6 @@ export default {
             border-radius: .2rem .26rem 0 .2rem;
         } 
     }
-    
-}
-</style>
 
+    
+} 

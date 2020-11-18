@@ -1,55 +1,69 @@
 <template>
-    <div class="head">
-         
+    <div class="headerr">
+        <span class="heade_tit">{{title}}</span>
+        <slot name="car_title"/>
+        <slot name="img_left"/>
+        <slot name="img_right"/>
     </div>
 </template>
 
 <script>
 export default {
-    components: {
-
-    },
     props: {
-
+        title:{
+            type:String
+        }
     },
     data() {
         return {
 
         };
     },
-    created() {
-
-    },
-    watch: {
-
-    },
-    computed: {
-
-    },
-    mounted() {
-        
-    },
     methods: {
-        back(){
-            this.$router.go(-1);
-        }
+
+    },
+    components: {
+
     },
 };
 </script>
 
-<style lang='less' scoped>
-.head{
-    height: .88rem;
-    line-height: .88rem;
+<style scoped lang="less">
+.headerr{
+    width: 100%;
+    height: 1.28rem;
+    line-height: .46rem;
+    font-size: .18rem;
     text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 0 .24rem;
     position: relative;
-    .back{
+    background-color: #ffffff;
+    box-sizing: border-box;
+    .heade_tit{
+        display: block;
         position: absolute;
-        left: .24rem;
-        top: 0.18rem;
-    }
-    p{
+        left: 50%;
+        top: .66rem;
+        transform: translateX(-50%);
         font-size: .36rem;
+        font-weight: bold;
+        color: #333333;
+        font-family: '苹方';
+    }
+    .img_right{
+        width: .47rem;
+        height: .16rem;
+        position: absolute;
+        top: .65rem;
+        right: 0rem;
+    }
+    .img_left{
+        width: .18rem;
+        height: .33rem;
+        position: absolute;
+        top: .67rem;
+        left: 0rem;
     }
 }
 </style>
