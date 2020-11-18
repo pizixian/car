@@ -1,6 +1,10 @@
 <template>
+<<<<<<< HEAD
   <div id="app">
    
+=======
+  <div id="app"> 
+>>>>>>> e3dbe3280ec0ea0a2f32168cc20f4dd669c1b2fd
     <router-view/>
   </div>
 </template>
@@ -11,6 +15,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
+<<<<<<< HEAD
 }
+=======
+} 
+>>>>>>> e3dbe3280ec0ea0a2f32168cc20f4dd669c1b2fd
 
 </style>
