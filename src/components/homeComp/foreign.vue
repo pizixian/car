@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="foreri">
 
     </div>
 </template>
@@ -14,12 +14,18 @@ export default {
 
         };
     },
+    mounted(){
+        document.getElementsByClassName('inland')[0].style.display = 'none'
+    },
     methods: {
 
     },
     components: {
 
     },
+    beforeDestroy(){
+        document.getElementsByClassName('inland')[0].style.display = 'block' 
+    }
 };
 </script>
 

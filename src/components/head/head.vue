@@ -1,8 +1,8 @@
 <template>
-    <div class="headerr">
+    <div class="headerr" >
         <span class="heade_tit">{{title}}</span>
         <slot name="car_title"/>
-        <slot name="img_left"/>
+        <slot name="img_left" @click="back"></slot>
         <slot name="img_right"/>
     </div>
 </template>
@@ -20,7 +20,10 @@ export default {
         };
     },
     methods: {
-
+        back(){
+            console.log(999)
+            this.$router.go(-1)
+        }
     },
     components: {
 

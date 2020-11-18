@@ -92,13 +92,17 @@ body {
 .userinfo {
   width: 5rem;
   height: 100%;
-  background-color: #ffff;
+  background-color: #333;
+  // opacity: .8;    
+   
   .user {
     padding-top: 0.8rem;
     height: 3.07rem;
     align-items: center;
+    opacity: 1;
     background-color: dodgerblue;
     border-radius: 0 0.45rem 0 0;
+    overflow: hidden;
     display: flex;
     div:nth-of-type(1) {
       margin-left: 0.23rem;
@@ -125,6 +129,10 @@ body {
     }
   }
   .lis{
+    background-color: #ffff;
+    // opacity: 1;
+    flex: 1;
+    height: 10.27rem;
       li{
           height: 1rem;
           line-height: 1rem;
