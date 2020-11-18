@@ -5,6 +5,8 @@ import store from './store'
 import Ressetcss from './assets/css/common.css' 
 Vue.config.productionTip = false
 
+import 'vant/lib/index.css';
+
 //引入框架
 import Vant from 'vant';
 import 'vant/lib/index.css';
@@ -15,7 +17,7 @@ new Vue({
   mounted(){
    
       //rem的响应式
-    var uiW = 375,
+    var uiW = 750,
     winW = document.documentElement.clientWidth,
     // 定义比例
     rate = winW / uiW;
