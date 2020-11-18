@@ -1,7 +1,13 @@
 <template>
     <div class="home">
         <Head> 
-            <img src="../assets/images/首页小人儿.png" slot="img_left" class="img_left">
+            <van-cell is-link @click="showPopup">
+                <img src="../assets/images/首页小人儿.png" slot="img_left" class="img_left">
+            </van-cell>
+            <van-popup v-model="showinfo">
+                <UserInfo></UserInfo>
+            </van-popup>
+            
             <span slot="car_title" class="heade_tit">平价租车</span> 
             <van-icon name="ellipsis" slot="img_right" class="img_right"/>
         </Head> 
@@ -29,7 +35,7 @@ export default {
     },
     data() {
         return {
-
+            showinfo:false
         };
     },
     created() {
@@ -45,7 +51,9 @@ export default {
 
     },
     methods: {
-
+        showPopup() {
+            this.showinfo = true;
+        }
     },
 };
 </script>
