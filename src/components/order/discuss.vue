@@ -9,34 +9,37 @@
                 <li>
                     <span>手续办理： </span> 
                     <van-rate
-                        v-model="value"
+                        v-model="value1"
                         size=".54rem"
                         gutter=".36rem"
                         color="#FFAE3A"
                         void-icon="star"
-                        void-color="#eee" 
+                        void-color="#eee"  
+                        touchable
                     />
                 </li>
                 <li>
                     <span>车辆情况： </span> 
                     <van-rate
-                        v-model="value"
+                        v-model="value2"
                         size=".54rem"
                         gutter=".36rem"
                         color="#FFAE3A"
                         void-icon="star"
                         void-color="#eee" 
+                        touchable
                     />
                 </li>
                 <li>
                     <span>服务态度： </span> 
                     <van-rate
-                        v-model="value"
+                        v-model="value3"
                         size=".54rem"
                         gutter=".36rem"
                         color="#FFAE3A"
                         void-icon="star"
                         void-color="#eee" 
+                        touchable
                     />
                 </li>
             </ul>
@@ -54,10 +57,12 @@ export default {
     },
     data() {
         return {
-            value:3
+            value1:0,
+            value2:0,
+            value3:0
         };
     },
-    methods: {
+    methods: { 
 
     },
     components: {

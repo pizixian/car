@@ -11,7 +11,7 @@
                 <img src="../assets/images/首页小人儿.png">
             </div> 
             <span slot="car_title" class="heade_tit">平价租车</span> 
-            <van-icon name="ellipsis" slot="img_right" class="img_right"/>
+            <img src="../assets/images/首页三点.png" class="img_right" slot="img_right">
         </Head> 
         <!-- 地图 -->
         <Map></Map>

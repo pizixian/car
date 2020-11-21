@@ -34,7 +34,7 @@ export default {
 <style scoped lang="less">
 .headerr{
     width: 100%;
-    height: 1.28rem;
+    height: .74rem;
     line-height: .46rem;
     font-size: .18rem;
     text-align: center;
@@ -47,7 +47,7 @@ export default {
         display: block;
         position: absolute;
         left: 50%;
-        top: .66rem;
+        top: .22rem;
         transform: translateX(-50%);
         font-size: .36rem;
         font-weight: bold;
@@ -55,11 +55,11 @@ export default {
         font-family: '苹方';
     }
     .img_right{
-        width: .47rem;
-        height: .16rem;
+        width: .46rem;
+        height: .12rem;
         position: absolute;
-        top: .65rem;
-        right: 0rem;
+        top: .36rem;
+        right: .23rem;
     }
     .img_left{
         width: .18rem;
@@ -73,7 +73,7 @@ export default {
         height: .34rem;
         position: absolute; 
         left: .28rem;
-        top: .67rem; 
+        top: .26rem; 
         img{
             width: 100%;
             height: 100%;
